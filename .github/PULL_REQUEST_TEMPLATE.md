@@ -29,4 +29,12 @@ Please follow these steps when preparing your pull request:
 
 - [ ] Address any changes requested by the reviewer
 
+## Steps for Maintainers
+
+These steps are for maintainers only:
+
+- [ ] Squash and merge the pull request
+
+- [ ] Delete the issue branch, if needed
+
 [1]: https://github.com/digitallinguistics/tools/issues
