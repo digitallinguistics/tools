@@ -1,0 +1,83 @@
+<main>
+
+      <!-- wrapper for input/output -->
+      <section id=conversion>
+
+        <label for=input>
+          <span>Text to Convert</span>
+          <textarea id=input name=input placeholder='Type or paste the text you want to convert here.'></textarea>
+        </label>
+        <!-- end input -->
+
+        <div>
+          <label>
+            <span>Output</span>
+            <output id=output name=output for=input></output>
+          </label>
+          <div class=buttons>
+            <button id=copy type=button name=copy>Copy</button>
+            <button id=download type=button name=download>Download</button>
+          </div>
+        </div>
+        <!-- end output -->
+
+      </section>
+      <!-- end wrapper for input/output -->
+
+
+      <section id=scheme>
+
+        <label>
+
+          <span>Select a Transliteration Scheme</span>
+
+          <template id=dropdown-template>
+            <select>
+              <option value=select disabled selected>Select a Scheme</option>
+              <option value=add>+ Add a New Scheme</option>
+            </select>
+          </template>
+
+        </label>
+
+        <label>
+          <span>Scheme Name</span>
+          <input id=name type=text name=name placeholder='My Transliteration Scheme'>
+        </label>
+
+        <fieldset>
+
+          <legend>Substitution Rules</legend>
+
+          <div>
+
+            <ul id=rules></ul>
+
+            <template id=rule-template>
+              <li>
+                <input type=text placeholder='character(s) to replace'>
+                →
+                <input type=text placeholder='replacement'>
+                <img src=../img/x-circle.svg alt='delete this rule'>
+              </li>
+            </template>
+
+            <button id=addRule type=button name=addRule>Add Rule</button>
+
+          </div>
+
+        </fieldset>
+
+      </section>
+      <!-- end scheme -->
+
+
+      <div class=buttons>
+        <input id=file type=file name=file accept='application/javascript, application/json, application/rtf, text/javascript, text/json, text/plain, text/rtf, .js, .json, .rtf, .txt'>
+        <button id=import type=button name=import>Import Schemes</button>
+        <button id=export type=button name=export>Export Schemes</button>
+      </div>
+      <!-- end buttons -->
+
+
+    </main>
