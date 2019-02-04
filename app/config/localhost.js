@@ -1,3 +1,4 @@
 module.exports = {
-  PORT: 3001,
+  LOG_REQUESTS: true,
+  PORT:         3001,
 };

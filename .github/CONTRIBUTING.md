@@ -47,6 +47,7 @@ This project uses a simple branching structure. For each issue, an issue branch 
 ## Project Structure
 
 * `/app` - Server-side code (using [Koa][9])
+  - `/config` - Environment variables (see the documentation for the environment variables in the [config][10] file)
 * `/public` - Static assets (CSS, JS, images, etc.) are served from this folder
 
 [1]: https://github.com/digitallinguistics/tools/issues
@@ -58,3 +59,4 @@ This project uses a simple branching structure. For each issue, an issue branch 
 [7]: https://introjs.com/
 [8]: https://github.com/digitallinguistics/digitallinguistics.github.io/blob/master/.github/CONTRIBUTING.md
 [9]: https://www.npmjs.com/package/koa
+[10]: https://github.com/digitallinguistics/tools/blob/master/app/config/index.js
