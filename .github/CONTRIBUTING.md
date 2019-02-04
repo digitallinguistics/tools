@@ -30,10 +30,21 @@ Each of the tools in this project should aim to eventually implement all of the 
 
 ## Releases, Versioning, & Branching
 
-This project does not use releases or versioning. It uses a simple branching workflow, where each issue is associated with a single issue branch. That issue branch is squashed and merged back into the `master` branch when the changes are complete.
+This project uses [semantic versioning][3] to track changes:
+
+- **major:** when tools are added, removed, or rewritten or undergo drastic changes
+- **minor:** when new features are added or removed from individual tools
+- **patch:** when fixes or changes to documentation are made
+
+[GitHub releases][4] are used to publish releases. Only major and minor releases are published. Periodically, the `master` branch is tagged for a release, and any changes made since the last release are summarized. This automatically publishes the release to [Zenodo][5] for citation and archiving.
+
+This project uses a simple branching structure. For each issue, an issue branch is made from `master`, and then merged back into `master` when the changes are complete.
 
 [1]: https://github.com/digitallinguistics/tools/issues
 [2]: https://github.com/digitallinguistics/tools/blob/master/.github/PULL_REQUEST_TEMPLATE.md
+[3]: https://semver.org/
+[4]: https://github.com/digitallinguistics/tools/releases
+[5]: https://zenodo.org/
 
 [7]: https://introjs.com/
 [8]: https://github.com/digitallinguistics/digitallinguistics.github.io/blob/master/.github/CONTRIBUTING.md
