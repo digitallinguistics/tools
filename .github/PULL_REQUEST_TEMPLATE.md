@@ -25,6 +25,8 @@ Please follow these steps when preparing your pull request:
 
 - [ ] Make your changes to the code
 
+- [ ] Lint your code using the included ESLint stylesheet
+
 - [ ] Update the documentation again, if needed
 
 - [ ] Update your issue branch from the `master` branch
