@@ -43,6 +43,10 @@ These steps are for maintainers only:
 
 - [ ] The `master` branch deploys to the `staging` slot
 
+- [ ] Test changes on `staging` slot, hotfixing as needed
+
+- [ ] Swap `staging` and `production` slots
+
 - [ ] Delete the issue branch, if needed
 
 - [ ] add changes to latest release draft, or create a new draft
