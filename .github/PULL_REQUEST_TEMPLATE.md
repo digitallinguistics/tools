@@ -37,4 +37,6 @@ These steps are for maintainers only:
 
 - [ ] Delete the issue branch, if needed
 
+- [ ] add changes to latest release draft, or create a new draft
+
 [1]: https://github.com/digitallinguistics/tools/issues
