@@ -3,11 +3,11 @@
  */
 
 // Imports
-const { helmet } = require(`./middleware`);
 const Koa        = require(`koa`);
 const meta       = require(`../package.json`);
 
-const { env, port } = require(`./config`);
+const { env, port }     = require(`./config`);
+const { helmet, serve } = require(`./middleware`);
 
 // Initialize Koa
 const app = new Koa();
@@ -16,6 +16,7 @@ const app = new Koa();
 app.proxy = true; // trust the Azure proxy
 
 // Middleware
+app.use(serve);   // serve static files from /public
 app.use(helmet);  // set security settings
 
 app.use(context => {

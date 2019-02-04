@@ -47,6 +47,7 @@ This project uses a simple branching structure. For each issue, an issue branch 
 ## Project Structure
 
 * `/app` - Server-side code (using [Koa][9])
+* `/public` - Static assets (CSS, JS, images, etc.) are served from this folder
 
 [1]: https://github.com/digitallinguistics/tools/issues
 [2]: https://github.com/digitallinguistics/tools/blob/master/.github/PULL_REQUEST_TEMPLATE.md
