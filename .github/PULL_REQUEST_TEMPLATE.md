@@ -41,6 +41,8 @@ These steps are for maintainers only:
 
 - [ ] Squash and merge the pull request
 
+- [ ] The `master` branch deploys to the `staging` slot
+
 - [ ] Delete the issue branch, if needed
 
 - [ ] add changes to latest release draft, or create a new draft
