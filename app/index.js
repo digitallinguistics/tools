@@ -6,8 +6,7 @@
 const Koa  = require(`koa`);
 const meta = require(`../package.json`);
 
-const env  = process.env.NODE_ENV || `localhost`;
-const port = process.env.PORT || 3001; // eslint-disable-line no-magic-numbers
+const { env, port } = require(`./config`);
 
 // Initialize Koa
 const app = new Koa();
