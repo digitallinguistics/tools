@@ -44,6 +44,10 @@ This project uses [semantic versioning][3] to track changes:
 
 This project uses a simple branching structure. For each issue, an issue branch is made from `master`, and then merged back into `master` when the changes are complete.
 
+## Project Structure
+
+* `/app` - Server-side code (using [Koa][9])
+
 [1]: https://github.com/digitallinguistics/tools/issues
 [2]: https://github.com/digitallinguistics/tools/blob/master/.github/PULL_REQUEST_TEMPLATE.md
 [3]: https://semver.org/
@@ -52,3 +56,4 @@ This project uses a simple branching structure. For each issue, an issue branch 
 [6]: https://eslint.org/
 [7]: https://introjs.com/
 [8]: https://github.com/digitallinguistics/digitallinguistics.github.io/blob/master/.github/CONTRIBUTING.md
+[9]: https://www.npmjs.com/package/koa

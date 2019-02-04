@@ -1,0 +1,6 @@
+env:
+  browser: false
+  jasmine: false
+  node:    true
+rules:
+  callback-return: off
