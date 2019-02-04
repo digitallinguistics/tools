@@ -17,7 +17,7 @@ Please follow these steps when preparing your pull request:
 
 - [ ] *(optional)* Open a pull request from your issue branch into `master`, to track your progress through this checklist. You will need to make some change to the code before you can open the pull request.
 
-- [ ] Install the current version of [Node.js][2]
+- [ ] Install the latest version of [Node.js][2] listed in `package.json`'s `engines` field. (Use [nvm][3] or [nvm-windows][4] if you need to have multiple Node versions installed on your machine.)
 
 - [ ] Install the project dependencies by navigating to the project folder from the command line and running `npm install`
 
@@ -45,3 +45,5 @@ These steps are for maintainers only:
 
 [1]: https://github.com/digitallinguistics/tools/issues
 [2]: https://nodejs.org/en/
+[3]: https://github.com/creationix/nvm
+[4]: https://github.com/coreybutler/nvm-windows
