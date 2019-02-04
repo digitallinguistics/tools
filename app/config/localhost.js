@@ -1,4 +1,6 @@
 module.exports = {
-  LOG_REQUESTS: true,
-  PORT:         3001,
+  LOG_APP_ERRORS:  true,
+  LOG_REQUESTS:    true,
+  LOG_USER_ERRORS: true,
+  PORT:            3001,
 };
