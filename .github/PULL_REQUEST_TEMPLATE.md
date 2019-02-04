@@ -17,6 +17,10 @@ Please follow these steps when preparing your pull request:
 
 - [ ] *(optional)* Open a pull request from your issue branch into `master`, to track your progress through this checklist. You will need to make some change to the code before you can open the pull request.
 
+- [ ] Install the current version of [Node.js][2]
+
+- [ ] Install the project dependencies by navigating to the project folder from the command line and running `npm install`
+
 - [ ] Update the documentation (README, CONTRIBUTING, PULL_REQUEST_TEMPLATE) to reflect the changes you intend to make
 
 - [ ] Make your changes to the code
@@ -40,3 +44,4 @@ These steps are for maintainers only:
 - [ ] add changes to latest release draft, or create a new draft
 
 [1]: https://github.com/digitallinguistics/tools/issues
+[2]: https://nodejs.org/en/
