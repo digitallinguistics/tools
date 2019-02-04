@@ -16,6 +16,10 @@ Consider [opening an issue][1] for any of the following:
 
 Be sure to read the [General Contributing Guidelines for DLx Projects][8].
 
+## Coding Guidelines
+
+The project includes an [ESLint][6] stylesheet to ensure consistency when writing JavaScript. Please ensure that your code adheres to the included stylesheet as much as possible, and that exceptions are documented using `eslint-ignore`.
+
 ## Guidelines for Building Tools
 
 Each of the tools in this project should aim to eventually implement all of the following:
@@ -45,6 +49,6 @@ This project uses a simple branching structure. For each issue, an issue branch 
 [3]: https://semver.org/
 [4]: https://github.com/digitallinguistics/tools/releases
 [5]: https://zenodo.org/
-
+[6]: https://eslint.org/
 [7]: https://introjs.com/
 [8]: https://github.com/digitallinguistics/digitallinguistics.github.io/blob/master/.github/CONTRIBUTING.md
