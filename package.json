@@ -1,0 +1,35 @@
+{
+  "name": "@digitallinguistics/tools",
+  "version": "0.1.0",
+  "description": "A collection of tools and utilities for working with linguistic data",
+  "keywords": [
+    "linguistics",
+    "Digital Linguistics",
+    "DLx",
+    "digital humanities",
+    "language documentation",
+    "corpus linguistics",
+    "corpora",
+    "transliteration"
+  ],
+  "homepage": "https://github.com/digitallinguistics/tools",
+  "bugs": "https://github.com/digitallinguistics/tools/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel W. Hieber",
+    "email": "dwhieb@gmail.com",
+    "url": "https://danielhieber.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitallinguistics/tools.git"
+  },
+  "private": true,
+  "main": "index.js",
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
