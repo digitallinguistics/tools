@@ -6,13 +6,15 @@ Thank you for contributing to Tulip! Pull requests welcome!
 * [Preparing a Pull Request][2]
 * [General Guidelines for DLx Projects][8]
 
-## Issues
-
 Consider [opening an issue][1] for any of the following:
 
 - bugs
 - feature requests
 - requests for new tools
+
+[Follow these steps when preparing a pull request.][2]
+
+Be sure to read the [General Contributing Guidelines for DLx Projects][8].
 
 ## Guidelines for Building Tools
 
