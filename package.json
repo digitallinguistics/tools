@@ -33,7 +33,8 @@
     "start": "node index.js"
   },
   "devDependencies": {
-    "eslint": "^5.13.0"
+    "eslint": "^5.13.0",
+    "less": "^3.9.0"
   },
   "dependencies": {
     "koa": "^2.7.0",
