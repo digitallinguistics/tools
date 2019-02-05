@@ -3,8 +3,9 @@
  */
 
 // Imports
-const Koa  = require(`koa`);
-const meta = require(`../package.json`);
+const Koa    = require(`koa`);
+const meta   = require(`../package.json`);
+const router = require(`./router`);
 
 const { env, port } = require(`./config`);
 
@@ -32,10 +33,7 @@ app.use(helmet);     // set security settings
 app.use(vary);       // set the Vary header
 app.use(locals);     // inject local variables
 app.use(handlebars); // use Handlebars for templating
-
-app.use(context => {
-  context.body = `DLx Tools`; // eslint-disable-line no-param-reassign
-});
+app.use(router);     // add routes
 
 // Start server
 app.listen(port, () => console.info(`Server started. Press Ctrl+C to terminate.

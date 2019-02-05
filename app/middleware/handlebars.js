@@ -9,7 +9,7 @@ const viewEngine = require(`koa-hbs`);
 
 // Options for view engine
 const options = {
-  defaultLayout: ``,
+  defaultLayout: false,
   extname:       `.hbs`,
   handlebars,
   partialsPath:  path.join(__dirname, `../../components`),
