@@ -49,6 +49,9 @@ This project uses a simple branching structure. For each issue, an issue branch 
 * `/app` - Server-side code (using [Koa][9])
   - `/config` - Environment variables (see the documentation for the environment variables in the [config][10] file)
 * `/public` - Static assets (CSS, JS, images, etc.) are served from this folder
+* `/views` - Handlebars templates
+  - `/layouts` - Page layouts (currently just the Main layout)
+  - `/pages` - Individual page templates (each tool is its own page); each page folder contains all of its associated source code
 
 [1]: https://github.com/digitallinguistics/tools/issues
 [2]: https://github.com/digitallinguistics/tools/blob/master/.github/PULL_REQUEST_TEMPLATE.md
