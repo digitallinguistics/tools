@@ -38,7 +38,7 @@ This project uses [semantic versioning][3] to track changes:
 
 - **major:** when tools are added, removed, or rewritten or undergo drastic changes
 - **minor:** when new features are added or removed from individual tools
-- **patch:** when fixes or changes to documentation are made
+- **patch:** when fixes are made or the documentation is changed
 
 [GitHub releases][4] are used to publish releases. Only major and minor releases are published. Periodically, the `master` branch is tagged for a release, and any user-facing changes made since the last release are summarized. This automatically publishes the release to [Zenodo][5] for citation and archiving.
 
