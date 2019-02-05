@@ -8,7 +8,11 @@ const helmet         = require(`koa-helmet`);
 const config = {
   contentSecurityPolicy: {
     directives: {
-      defaultSrc:              [`'self'`, `*.digitallinguistics.io`],
+      defaultSrc: [
+        `'self'`,
+        `*.digitallinguistics.io`,
+        `digitallinguistics.blob.core.windows.net`,
+      ],
       upgradeInsecureRequests: production,
     },
   },

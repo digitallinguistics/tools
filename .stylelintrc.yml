@@ -1,4 +1,6 @@
 # Stylelint 9.10.1
+ignoreFiles:
+  - '*.css'
 rules:
 
   # blacklists / whitelists / regexp
