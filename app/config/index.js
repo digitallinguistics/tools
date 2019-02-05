@@ -20,6 +20,7 @@ Object.assign(process.env, settings);
  * @prop {Boolean} production    - Whether the app is running on production (including the `staging` slot)
  */
 module.exports = {
+  cdn:           process.env.CDN,
   env:           process.env.NODE_ENV,
   localhost:     process.env.NODE_ENV === `localhost`,
   logAppErrors:  process.env.LOG_APP_ERRORS === `true` || process.env.LOG_APP_ERRORS === true,

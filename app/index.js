@@ -12,6 +12,7 @@ const {
   errors,
   handlebars,
   helmet,
+  locals,
   logger,
   serve,
   vary,
@@ -29,6 +30,7 @@ app.use(logger);     // log requests to the console
 app.use(errors);     // error handling and logging
 app.use(helmet);     // set security settings
 app.use(vary);       // set the Vary header
+app.use(locals);     // inject local variables
 app.use(handlebars); // use Handlebars for templating
 
 app.use(context => {
