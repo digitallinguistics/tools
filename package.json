@@ -30,7 +30,7 @@
     "node": "10.x"
   },
   "scripts": {
-    "build": "lessc views/main/main.less public/css/main.css --clean-css=\"--s0\"",
+    "build": "lessc views/page/page.less public/css/global.css --clean-css=\"--s0\"",
     "start": "node index.js"
   },
   "devDependencies": {
