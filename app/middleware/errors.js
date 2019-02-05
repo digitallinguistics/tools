@@ -1,5 +1,5 @@
 /**
- * A generic error handler that returns a simple JSON response
+ * A generic error handler that renders the error page
  */
 
 const { STATUS_CODES: statusCodes } = require(`http`);
@@ -20,15 +20,16 @@ async function errors(context, next) {
 
     if (status === 404) {
 
-      const message = `The page ${context.originalUrl} was not found.`;
+      const message = `The page <code>${context.originalUrl}</code> was not found.`;
 
       if (logUserErrors) console.warn(message);
 
-      context.body = {
+      return context.render(`error/error`, {
         message,
         status,
         statusCode,
-      };
+        title: `Error`,
+      });
 
     }
 
@@ -37,16 +38,17 @@ async function errors(context, next) {
     const status     = e.statusCode || e.status || 500;
     const statusCode = e.statusCode || statusCodes[status];
 
-    const message = `Internal server error. Please open an issue on GitHub at: https://github.com/digitallinguistics/digitallinguistics.io`;
+    const message = `Internal server error. <a href=https://github.com/digitallinguistics/tools/issues>Please open an issue on GitHub.</a>`;
 
     if ((400 <= status < 500) && logUserErrors) console.error(e);
     if ((500 <= status) && logAppErrors) console.error(e);
 
-    context.body = {
+    return context.render(`error/error`, {
       message,
       status,
       statusCode,
-    };
+      title: `Error`,
+    });
 
   }
 
