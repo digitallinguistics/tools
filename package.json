@@ -35,6 +35,7 @@
   "devDependencies": {
     "eslint": "^5.13.0",
     "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "semantic-ui-less": "^2.4.1",
     "webpack": "^4.29.1"
   },
