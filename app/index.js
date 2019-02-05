@@ -13,6 +13,7 @@ const {
   helmet,
   logger,
   serve,
+  vary,
 } = require(`./middleware`);
 
 // Initialize Koa
@@ -26,6 +27,7 @@ app.use(serve);   // serve static files from /public
 app.use(logger);  // log requests to the console
 app.use(errors);  // error handling and logging
 app.use(helmet);  // set security settings
+app.use(vary);    // set the Vary header
 
 app.use(context => {
   context.body = `DLx Tools`; // eslint-disable-line no-param-reassign
