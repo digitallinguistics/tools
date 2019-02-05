@@ -25,9 +25,11 @@ Please follow these steps when preparing your pull request:
 
 - [ ] Make your changes to the code
 
-- [ ] Test your changes manually
-
 - [ ] Lint your code using the included ESLint and Stylelint stylesheets
+
+- [ ] Build the project by running `npm run build`
+
+- [ ] Test your changes manually
 
 - [ ] Update the documentation again, if needed
 
