@@ -20,7 +20,7 @@ async function errors(context, next) {
 
     if (status === 404) {
 
-      const message = `The page <code>${context.originalUrl}</code> was not found.`;
+      const message = `The page <code class=code>${context.originalUrl}</code> was not found.`;
 
       if (logUserErrors) console.warn(message);
 

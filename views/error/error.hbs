@@ -1,6 +1,10 @@
-<main id=error>
+{{#contentFor 'head'}}
+  <link rel=stylesheet href=css/error.css>
+{{/contentFor}}
 
-  <h1>{{status}}: {{statusCode}}</h1>
+<main id=error class=main>
+
+  <h1 class='ui header'>{{status}}: {{statusCode}}</h1>
 
   <p>{{{message}}}</p>
 

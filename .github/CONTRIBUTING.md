@@ -46,12 +46,22 @@ This project uses a simple branching structure. For each issue, an issue branch 
 
 ## Project Structure
 
+* `/.github` - GitHub documentation (for developers and contributors)
 * `/app` - Server-side code (using [Koa][9])
   - `/config` - Environment variables (see the documentation for the environment variables in the [config][10] file)
   - `/middleware` - Koa middleware
+* `/build` - Build scripts
 * `/components` - Each folder contains all the source code for a single Handlebars component, including style and scripts
 * `/public` - Static assets (CSS, JS, images, etc.) are served from this folder
 * `/views` - Each folder contains all the source code for a single page or tool, including style and scripts
+
+Each tool should have a folder structure like the one below.
+
+`/{tool}`
+  - `index.js` - This file should export the server-side GET handler
+  - `{tool}.hbs` - The Handlebars template for this page / tool
+  - `{tool}.js` - The entry point for the client-side JavaScript
+  - `{tool}.less` - The entry point for the LESS files
 
 [1]: https://github.com/digitallinguistics/tools/issues
 [2]: https://github.com/digitallinguistics/tools/blob/master/.github/PULL_REQUEST_TEMPLATE.md
