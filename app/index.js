@@ -33,10 +33,6 @@ app.use(vary);       // set the Vary header
 app.use(locals);     // inject local variables
 app.use(handlebars); // use Handlebars for templating
 
-app.use(context => {
-  context.body = `DLx Tools`; // eslint-disable-line no-param-reassign
-});
-
 // Start server
 app.listen(port, () => console.info(`Server started. Press Ctrl+C to terminate.
   Project: ${meta.name}
