@@ -10,6 +10,7 @@ const { env, port } = require(`./config`);
 
 const {
   errors,
+  handlebars,
   helmet,
   logger,
   serve,
@@ -20,14 +21,15 @@ const {
 const app = new Koa();
 
 // Settings
-app.proxy = true; // trust the Azure proxy
+app.proxy = true;    // trust the Azure proxy
 
 // Middleware
-app.use(serve);   // serve static files from /public
-app.use(logger);  // log requests to the console
-app.use(errors);  // error handling and logging
-app.use(helmet);  // set security settings
-app.use(vary);    // set the Vary header
+app.use(serve);      // serve static files from /public
+app.use(logger);     // log requests to the console
+app.use(errors);     // error handling and logging
+app.use(helmet);     // set security settings
+app.use(vary);       // set the Vary header
+app.use(handlebars); // use Handlebars for templating
 
 app.use(context => {
   context.body = `DLx Tools`; // eslint-disable-line no-param-reassign
