@@ -48,10 +48,10 @@ This project uses a simple branching structure. For each issue, an issue branch 
 
 * `/app` - Server-side code (using [Koa][9])
   - `/config` - Environment variables (see the documentation for the environment variables in the [config][10] file)
+  - `/middleware` - Koa middleware
+* `/components` - Each folder contains all the source code for a single Handlebars component, including style and scripts
 * `/public` - Static assets (CSS, JS, images, etc.) are served from this folder
-* `/views` - Handlebars templates
-  - `/layouts` - Page layouts (currently just the Main layout)
-  - `/pages` - Individual page templates (each tool is its own page); each page folder contains all of its associated source code
+* `/views` - Each folder contains all the source code for a single page or tool, including style and scripts
 
 [1]: https://github.com/digitallinguistics/tools/issues
 [2]: https://github.com/digitallinguistics/tools/blob/master/.github/PULL_REQUEST_TEMPLATE.md
