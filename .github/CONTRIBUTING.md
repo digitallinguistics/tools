@@ -18,7 +18,7 @@ Be sure to read the [General Contributing Guidelines for DLx Projects][8].
 
 ## Coding Guidelines
 
-The project includes an [ESLint][6] stylesheet to ensure consistency when writing JavaScript. Please ensure that your code adheres to the included stylesheet as much as possible, and that exceptions are documented using `eslint-ignore`.
+This project includes an [ESLint][6] stylesheet for linting JavaScript, and a [Stylelint][11] stylesheet for linting CSS / LESS. These stylesheets help ensure consistency across developers when writing code. Please ensure that your code adheres to the included stylesheet as much as possible, and that exceptions are documented using `eslint-disable` or `stylelint-disable` as appropriate.
 
 ## Guidelines for Building Tools
 

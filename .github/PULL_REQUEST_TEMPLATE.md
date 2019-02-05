@@ -27,7 +27,7 @@ Please follow these steps when preparing your pull request:
 
 - [ ] Test your changes manually
 
-- [ ] Lint your code using the included ESLint stylesheet
+- [ ] Lint your code using the included ESLint and Stylelint stylesheets
 
 - [ ] Update the documentation again, if needed
 
