@@ -23,17 +23,18 @@ const {
 const app = new Koa();
 
 // Settings
-app.proxy = true;    // trust the Azure proxy
+app.proxy = true; // trust the Azure proxy
 
 // Middleware
-app.use(serve);      // serve static files from /public
-app.use(logger);     // log requests to the console
-app.use(errors);     // error handling and logging
-app.use(helmet);     // set security settings
-app.use(vary);       // set the Vary header
-app.use(locals);     // inject local variables
-app.use(handlebars); // use Handlebars for templating
-app.use(router);     // add routes
+app.use(errors);                  // error handling and logging
+app.use(serve);                   // serve static files from /public
+app.use(logger);                  // log requests to the console
+app.use(helmet);                  // set security settings
+app.use(vary);                    // set the Vary header
+app.use(locals);                  // inject local variables
+app.use(handlebars);              // use Handlebars for templating
+app.use(router.routes());         // add routes
+app.use(router.allowedMethods()); // return 405 and 501
 
 // Start server
 app.listen(port, () => console.info(`Server started. Press Ctrl+C to terminate.

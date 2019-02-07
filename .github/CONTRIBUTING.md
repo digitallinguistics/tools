@@ -63,6 +63,22 @@ Each tool should have a folder structure like the one below.
   - `{tool}.js` - The entry point for the client-side JavaScript
   - `{tool}.less` - The entry point for the LESS files
 
+## Semantic UI
+
+The following changes need to be made to the Semantic UI LESS files for this project:
+
+- [ ] Rename `theme.config.example` > `theme.config`
+
+- [ ] Make the following changes to `semantic-ui-less/themes/default/globals/site.variables`
+
+    ```less
+    @fontName          : var(--font);
+    @fontSmoothing     : antialiased;
+
+    @headerFont        : var(--font);
+    @pageFont          : var(--font);
+    ```
+
 [1]: https://github.com/digitallinguistics/tools/issues
 [2]: https://github.com/digitallinguistics/tools/blob/master/.github/PULL_REQUEST_TEMPLATE.md
 [3]: https://semver.org/

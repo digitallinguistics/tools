@@ -35,7 +35,6 @@
   },
   "devDependencies": {
     "eslint": "^5.13.0",
-    "flexbox-reset": "^2.4.0",
     "less": "^3.9.0",
     "less-plugin-clean-css": "^1.5.1",
     "ora": "^3.0.0",
