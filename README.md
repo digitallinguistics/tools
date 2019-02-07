@@ -13,9 +13,9 @@ You may also be interested in the [Lotus app][2], the DLx app for managing your 
 [![GitHub license](https://img.shields.io/github/license/digitallinguistics/tools.svg?style=flat)][5]
 [![GitHub stars](https://img.shields.io/github/stars/digitallinguistics/tools.svg?style=social)][3]
 
-This repository is maintained by [Daniel W. Hieber][4], and made available under an [MIT license][5]. The Tulip app may be cited using its [Zenodo][9] DOI:
+This repository is maintained by [Daniel W. Hieber][4], and made available under an [MIT license][5]. The TooLiP tool suite may be cited using its [Zenodo][9] DOI:
 
-> Hieber, Daniel W. 2019. Tulip (Tools for Linguistic Productivity). DOI:[10.5281/zenodo.2557872][9]
+> Hieber, Daniel W. 2019. TooLiP (Tools for Linguistic Productivity). DOI:[10.5281/zenodo.2557872][9]
 
 [1]: https://tools.digitallinguistics.io
 [2]: https://app.digitallinguistics.io

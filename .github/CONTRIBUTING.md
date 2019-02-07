@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for contributing to Tulip! Pull requests welcome!
+Thank you for contributing to TooLiP! Pull requests welcome!
 
 * [Open an Issue][1]
 * [Preparing a Pull Request][2]
