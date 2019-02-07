@@ -1,13 +1,35 @@
 <nav class=nav>
 
-  <a href=/>
-    <img src={{cdn}}/img/wugbot.svg alt='wugbot icon'>
-  </a>
+  <ul class='ui huge stackable blue inverted borderless left right attached menu'>
 
-  <ul>
-    <li><a href=/>Tools</a></li>
-    <li><a href=https://digitallinguistics.io>Website</a></li>
-    <li><a href=https://medium.com/digital-linguistics>Blog</a></li>
+    <li class='vertically fitted item'>
+      {{#if home}}
+        <a href=# aria-describedby=current class=image-link>
+      {{else}}
+        <a href=/ class=image-link>
+      {{/if}}
+        <img class=wugbot src={{cdn}}/img/wugbot.svg alt='Home'>
+      </a>
+    </li>
+
+    <li class='vertically fitted item link {{#if home}}active{{/if}}'>
+      {{#if home}}
+        <a href=# aria-describedby=current class=nav-link>Tools</a>
+      {{else}}
+        <a href=/ class=nav-link>Tools</a>
+      {{/if}}
+    </li>
+
+    <li class='vertically fitted item link'>
+      <a href=https://digitallinguistics.io class=nav-link>Website</a>
+    </li>
+
+    <li class='vertically fitted item link'>
+      <a href=https://medium.com/digital-linguistics class=nav-link>Blog</a>
+    </li>
+
   </ul>
+
+  <div hidden id=current>Current Page</div>
 
 </nav>

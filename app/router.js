@@ -11,7 +11,10 @@ const get      = router.get.bind(router);
 const redirect = router.redirect.bind(router);
 
 // Routes
-get(`/`, context => context.render(`home/home`, { title: `Home` }));
+get(`/`, context => context.render(`home/home`, {
+  home:  true,
+  title: `Home`,
+}));
 redirect(`/home`, `/`);
 
 module.exports = router;

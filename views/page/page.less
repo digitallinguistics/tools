@@ -4,14 +4,38 @@
 
 // Global styles
 @import 'https://digitallinguistics.blob.core.windows.net/less/fonts.less';
-@import 'node_modules/flexbox-reset/flexbox-reset.less';
+@import 'node_modules/semantic-ui-less/definitions/globals/reset.less';
+
+// NOTE: Uncomment this as needed during development
+// @import 'node_modules/semantic-ui-less/semantic.less';
 
 // Global components
-@import 'components/nav/nav.less';
+@import 'components/header/header.less';
 @import 'components/main/main.less';
+@import 'components/nav/nav.less';
 
+// reset
+* {
+  border:          0;
+  border-collapse: collapse;
+  font:            inherit;
+  margin:          0;
+  padding:         0;
+  text-decoration: none;
+  vertical-align:  baseline;
+}
+
+// set font styling globally
 body {
   font-family: var(--font); // use DLx fonts
   font-size:   100%;        // reset font size
   line-height: 1.5;         // apply 1.5 line height everywhere
+}
+
+// remove link styling
+a, a:link, a:visited, a:hover, a:active {
+  background-color: transparent;
+  background-image: none;
+  color:            inherit;
+  text-decoration:  none;
 }
