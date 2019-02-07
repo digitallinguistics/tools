@@ -29,7 +29,7 @@ Please follow these steps when preparing your pull request:
 
 - [ ] Build the project by running `npm run build`
 
-- [ ] Test your changes manually
+- [ ] Test your changes manually in each supported browser
 
 - [ ] Update the documentation again, if needed
 
