@@ -8,7 +8,11 @@
       {{else}}
         <a href=/ class=image-link>
       {{/if}}
-        <img class=wugbot src={{cdn}}/img/wugbot.svg alt='Home'>
+        {{!-- <img class=wugbot src={{cdn}}/img/wugbot.svg alt='Home'> --}}
+        <svg class=wugbot aria-labelledby=octicon-footer-title height=190px width=129px>
+          <title id=wugbot-nav-title>Home</title>
+          <use href=#svg-wugbot xlink:href=#svg-wugbot></use>
+        </svg>
       </a>
     </li>
 

@@ -32,6 +32,13 @@ Each of the tools in this project should aim to eventually implement all of the 
 - [ ] support for custom keyboards (interfacing with data from the Typist tool)
 - [ ] import / export to cloud services
 
+Each tool should ideally support the most recent two versions of all of the following browsers, on desktop and mobile:
+
+- [ ] Chrome
+- [ ] Edge
+- [ ] Firefox
+- [ ] Safari
+
 ## Releases, Versioning, & Branching
 
 This project uses [semantic versioning][3] to track changes:

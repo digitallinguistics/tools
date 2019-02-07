@@ -1,0 +1,35 @@
+@import 'node_modules/semantic-ui-less/definitions/elements/segment.less';
+
+.footer {
+
+  align-items:     flex-end;
+  display:         flex;
+  justify-content: space-around;
+  flex-wrap:       wrap;
+
+  &.ui.segment {
+    width: calc(100% + 1px);
+  }
+
+  .citation-section {
+    label {
+      font-weight: bold;
+    }
+  }
+
+  .github-section {
+    align-items:    center;
+    display:        flex;
+    flex-direction: column;
+  }
+
+  .octicon {
+    height: 2.5em;
+    width:  2.5em;
+  }
+
+  section {
+    padding: 1em;
+  }
+
+}

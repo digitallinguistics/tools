@@ -10,6 +10,8 @@
 // @import 'node_modules/semantic-ui-less/semantic.less';
 
 // Global components
+@import 'components/cite/cite.less';
+@import 'components/footer/footer.less';
 @import 'components/header/header.less';
 @import 'components/main/main.less';
 @import 'components/nav/nav.less';
@@ -27,9 +29,12 @@
 
 // set font styling globally
 body {
-  font-family: var(--font); // use DLx fonts
-  font-size:   100%;        // reset font size
-  line-height: 1.5;         // apply 1.5 line height everywhere
+  display:        flex;
+  flex-direction: column;
+  font-family:    var(--font); // use DLx fonts
+  font-size:      100%;        // reset font size
+  line-height:    1.5;         // apply 1.5 line height everywhere
+  min-height:     100vh;
 }
 
 // remove link styling
