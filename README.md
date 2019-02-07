@@ -1,4 +1,4 @@
-# [Tulip (Tools for Linguistic Productivity)][3]
+# [TooLiP (Tools for Linguistic Productivity)][3]
 
 This repository contains the source code for the [DLx Tools website][1], a collection of tools and utilities for working with linguistic data. Go to the [Tools page][1] for a complete list of the tools and purpose.
 
