@@ -21,7 +21,7 @@ const spriteOptions = {
  */
 async function readSVG(filePath) {
   const svg  = await readFile(filePath, `utf8`);
-  const name = path.basename(filePath, `.svg`);
+  const name = path.basename(filePath, `.svg`).replace(`.`, `-`);
   return { name, svg };
 }
 
@@ -62,4 +62,4 @@ async function createSprites() {
 
 }
 
-module.exports = createSprites();
+module.exports = createSprites;

@@ -2,7 +2,7 @@
  * Injects local variables into the context object for use in Handlebars templates
  */
 
-const { cdn }          = require(`../config`);
+const { cdn }           = require(`../config`);
 const { createSprites } = require(`../lib`);
 
 async function injectLocals(context, next) {

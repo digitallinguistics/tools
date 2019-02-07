@@ -13,6 +13,10 @@ const config = {
         `*.digitallinguistics.io`,
         `digitallinguistics.blob.core.windows.net`,
       ],
+      styleSrc: [
+        `'self'`,
+        `'unsafe-inline'`,
+      ],
       upgradeInsecureRequests: production,
     },
   },

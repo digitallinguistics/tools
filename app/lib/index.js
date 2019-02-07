@@ -1,3 +1,3 @@
-const createSprite = require(`./svg`);
+const createSprites = require(`./svg`);
 
-module.exports = { createSprite };
+module.exports = { createSprites };

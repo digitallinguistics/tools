@@ -20,9 +20,16 @@
   </head>
 
   <body>
+
     {{> nav/nav}}
     {{{body}}}
     {{> footer/footer}}
+
+    <!-- SVG Images -->
+    {{{svg.octicon-white}}}
+    {{{svg.wugbot}}}
+    {{#block 'svg'}}{{/block}}
+
   </body>
 
 </html>
