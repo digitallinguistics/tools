@@ -1,6 +1,7 @@
 const { logRequests } = require(`../config`);
 
 function logger(context, next) {
+
   const { method, originalUrl } = context;
 
   if (logRequests) {
