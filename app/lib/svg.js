@@ -2,6 +2,7 @@
  * Creates SVG sprites from the SVG files in the /public/img folder
  */
 
+const featherIcons = require(`../../manifest/icons.json`);
 const { icons }    = require(`feather-icons`);
 const path         = require(`path`);
 const { readFile } = require(`fs`).promises;
@@ -9,8 +10,6 @@ const recurse      = require(`recursive-readdir`);
 const spriter      = require(`svg2sprite`);
 
 let sprites;
-
-const featherIcons = [`external-link`];
 
 const spriteOptions = {
   iconPrefix: `svg-`,
