@@ -42,6 +42,7 @@
     "semantic-ui-less": "^2.4.1"
   },
   "dependencies": {
+    "feather-icons": "^4.17.0",
     "koa": "^2.7.0",
     "koa-hbs": "^1.0.0",
     "koa-helmet": "^4.0.0",

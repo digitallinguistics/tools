@@ -59,6 +59,8 @@ This project uses a simple branching structure. For each issue, an issue branch 
   - `/middleware` - Koa middleware
 * `/build` - Build scripts
 * `/components` - Each folder contains all the source code for a single Handlebars component, including style and scripts
+* `/manifest` - Manifests for various file types
+  - `icons.json` - An array of Feather Icons to make available to Handlebars templates
 * `/public` - Static assets (CSS, JS, images, etc.) are served from this folder
 * `/views` - Each folder contains all the source code for a single page or tool, including style and scripts
 

@@ -2,6 +2,8 @@
  * Creates SVG sprites from the SVG files in the /public/img folder
  */
 
+const featherIcons = require(`../../manifest/icons.json`);
+const { icons }    = require(`feather-icons`);
 const path         = require(`path`);
 const { readFile } = require(`fs`).promises;
 const recurse      = require(`recursive-readdir`);
@@ -47,6 +49,7 @@ async function createSprites() {
 
   if (sprites) return sprites;
 
+  // add local SVG files
   const imageFiles = await recurse(path.join(__dirname, `../../public/img`));
   const svgFiles   = imageFiles.filter(filePath => path.extname(filePath) === `.svg`);
   const svgs       = await Promise.all(svgFiles.map(readSVG));
@@ -57,6 +60,15 @@ async function createSprites() {
     hash[name] = sprite; // eslint-disable-line no-param-reassign
     return hash;
   }, {});
+
+  // add Feather Icons
+  featherIcons.forEach(name => {
+    const collection = spriter.collection(spriteOptions);
+    const svg        = icons[name].toSvg();
+    collection.add(name, svg);
+    const sprite     = collection.compile();
+    sprites[name]    = sprite;
+  });
 
   return sprites;
 
