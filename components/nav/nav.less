@@ -6,12 +6,26 @@
     display: flex;
   }
 
-  .menu.ui.attached {
-    width: calc(100% + 1px);
+  .ui.menu {
+    width: calc(100% + 1px); // stylelint-disable-line unit-blacklist
   }
 
   .nav-link {
-    padding: 0.75em 0;
+
+    border-bottom: 0.1em solid transparent;
+    margin:        0.75em 0;
+
+    &:hover {
+      border-bottom: 0.1em solid currentColor;
+    }
+
+  }
+
+  // nav link should have bottom border when active
+  .active {
+    .nav-link {
+      border-bottom: 0.1em solid currentColor;
+    }
   }
 
   .wugbot {
