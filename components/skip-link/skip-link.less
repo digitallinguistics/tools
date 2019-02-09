@@ -1,0 +1,25 @@
+@import 'components/visually-hidden/visually-hidden.less';
+
+.skip-link {
+
+  border:               0.1em solid white;
+  border-radius:        0 0 0.25em;
+  padding:              0.25em 0.5em;
+  position:             absolute;
+  text-decoration-skip: ink;
+  z-index:              1;
+
+  &:not(:focus) {
+    .visually-hidden;
+  }
+
+  &:link {
+    background-color: var(--blue);
+    color:            white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}

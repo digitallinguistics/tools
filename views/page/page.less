@@ -3,6 +3,7 @@
  */
 
 // Global styles
+@import (reference) 'node_modules/semantic-ui-less/themes/default/globals/site.variables';
 @import 'https://digitallinguistics.blob.core.windows.net/less/fonts.less';
 @import 'node_modules/semantic-ui-less/definitions/globals/reset.less';
 
@@ -15,8 +16,28 @@
 @import 'components/header/header.less';
 @import 'components/main/main.less';
 @import 'components/nav/nav.less';
+@import 'components/skip-link/skip-link.less';
 
+// variables
 @cdn: 'https://cdn.digitallinguistics.io';
+
+// colors
+
+:root {
+  --black:  @black;
+  --blue:   @blue;
+  --brown:  @brown;
+  --green:  @green;
+  --gray:   @grey;
+  --olive:  @olive;
+  --orange: @orange;
+  --pink:   @pink;
+  --purple: @purple;
+  --red:    @red;
+  --teal:   @teal;
+  --violet: @violet;
+  --yellow: @yellow;
+}
 
 // reset
 * {
