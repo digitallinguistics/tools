@@ -14,7 +14,6 @@
 @import 'components/cite/cite.less';
 @import 'components/footer/footer.less';
 @import 'components/header/header.less';
-@import 'components/main/main.less';
 @import 'components/nav/nav.less';
 @import 'components/skip-link/skip-link.less';
 
@@ -109,4 +108,9 @@ p a {
 :focus {
   outline:        0.1em dashed currentColor;
   outline-offset: 0.1em;
+}
+
+main {
+  flex-grow: 1;
+  padding:   2.5rem;
 }
