@@ -1,3 +1,32 @@
+{{#contentFor 'head'}}
+  <link rel=stylesheet href=css/home.css>
+{{/contentFor}}
+
 <main id=home>
 
+  <h1 class='ui center aligned header'>TooLiP (Tools for Linguistic Productivity)</h1>
+
+  <p>This website contains a collection of tools and utilities for working with linguistic data.</p>
+
+  <section>
+
+    <h2 class='ui header'>
+
+      <svg class=transliterate-icon aria-labelledby=transliterate-header-title>
+        <title id=transliterate-header-title>Transliteration icon</title>
+        <use href=#svg-transliterate xlink:href=#svg-transliterate></use>
+      </svg>
+
+      <a href=/transliterator>Transliterator</a>
+
+    </h2>
+
+    <p>A web app for converting text from one writing system to another, a process known as <dfn>transliteration</dfn>. This app may also be used to remove unwanted characters or sequences of characters from a text, a process known as <dfn>sanitization</dfn> or <dfn>text cleaning</dfn>.</p>
+
+  </section>
+
 </main>
+
+{{#contentFor 'svg'}}
+  {{{svg.transliterate}}}
+{{/contentFor}}
