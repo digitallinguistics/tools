@@ -1,0 +1,35 @@
+.link {
+
+  border-bottom: 0.1em solid transparent;
+
+  &:hover {
+    border-bottom: 0.1em solid currentColor;
+  }
+
+  &:not([href*='digitallinguistics.io']) {
+
+    --icon-width: 0.75em;
+    margin-right: var(--icon-width);
+
+    &::after {
+      background-image:    url('@{cdn}/img/external-link.svg');
+      background-repeat:   no-repeat;
+      background-position: center;
+      background-size:     contain;
+      content:             '(external link)';
+      filter:              opacity(0.5);
+      margin-left:         0.125em;
+      overflow:            hidden;
+      position:            absolute;
+      text-indent:         var(--icon-width);
+      white-space:         nowrap;
+      width:               var(--icon-width);
+    }
+
+    &:hover::after {
+      filter: none;
+    }
+
+  }
+
+}

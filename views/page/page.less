@@ -5,16 +5,13 @@
 // Global styles
 @import (reference) 'node_modules/semantic-ui-less/themes/default/globals/site.variables';
 @import 'https://digitallinguistics.blob.core.windows.net/less/fonts.less';
-@import 'node_modules/semantic-ui-less/definitions/globals/reset.less';
-
-// NOTE: Uncomment this as needed during development
-// @import 'node_modules/semantic-ui-less/semantic.less';
+@import 'node_modules/flexbox-reset/flexbox-reset.less';
 
 // Global components
 @import 'components/cite/cite.less';
 @import 'components/footer/footer.less';
 @import 'components/header/header.less';
-@import 'components/main/main.less';
+@import (reference) 'components/link/link.less';
 @import 'components/nav/nav.less';
 @import 'components/skip-link/skip-link.less';
 
@@ -22,7 +19,6 @@
 @cdn: 'https://cdn.digitallinguistics.io';
 
 // colors
-
 :root {
   --black:  @black;
   --blue:   @blue;
@@ -39,74 +35,34 @@
   --yellow: @yellow;
 }
 
-// reset
-* {
-  border:          0;
-  border-collapse: collapse;
-  font:            inherit;
-  margin:          0;
-  padding:         0;
-  text-decoration: none;
-  vertical-align:  baseline;
-}
-
-// set font styling globally
+// set global styles
 body {
+
+  // set global font styling
+  font-family: var(--font); // use DLx fonts
+  font-size:   100%;        // reset font size
+  line-height: 1.5;         // apply 1.5 line height everywhere
+
+  // set body styles
   display:        flex;
   flex-direction: column;
-  font-family:    var(--font); // use DLx fonts
-  font-size:      100%;        // reset font size
-  line-height:    1.5;         // apply 1.5 line height everywhere
   min-height:     100vh;
-}
 
-// link styling
-a, a:link, a:visited, a:hover, a:active {
-  background-color: transparent;
-  background-image: none;
-  color:            inherit;
-  text-decoration:  none;
 }
 
 // paragraph link styling
+h2 a,
 p a {
-
-  border-bottom: 0.1em solid transparent;
-
-  &:hover {
-    border-bottom: 0.1em solid currentColor;
-  }
-
-  &:not([href*='digitallinguistics.io']) {
-
-    --icon-width: 0.75em;
-    margin-right: var(--icon-width);
-
-    &::after {
-      background-image:    url('@{cdn}/img/external-link.svg');
-      background-repeat:   no-repeat;
-      background-position: center;
-      background-size:     contain;
-      content:             '(external link)';
-      filter:              opacity(0.5);
-      margin-left:         0.125em;
-      overflow:            hidden;
-      position:            absolute;
-      text-indent:         var(--icon-width);
-      white-space:         nowrap;
-      width:               var(--icon-width);
-    }
-
-    &:hover::after {
-      filter: none;
-    }
-
-  }
-
+  .link;
 }
 
 // better focus styling
 :focus {
   outline:        0.1em dashed currentColor;
   outline-offset: 0.1em;
+}
+
+main {
+  flex-grow: 1;
+  padding:   2.5rem;
 }
