@@ -1,0 +1,27 @@
+{
+  "name": "@digitallinguistics/tools",
+  "version": "0.1.0",
+  "description": "Online tools for working with linguistic data",
+  "private": true,
+  "keywords": [
+    "digital linguistics",
+    "linguistics",
+    "languages",
+    "DLx",
+    "digital humanities",
+    "transliteration"
+  ],
+  "homepage": "https://tools.digitallinguistics.io",
+  "bugs": "https://github.com/digitallinguistics/tools/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel W. Hieber",
+    "url": "https://github.com/dwhieb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitallinguistics/tools.git"
+  },
+  "scripts": {},
+  "devDependencies": {}
+}
