@@ -4,7 +4,9 @@ about: Issue for managing an individual tool
 title: "[TOOL]"
 labels: "\U0001F6E0️ tool"
 assignees: ''
+
 ---
+
 **What problem does the suggested tool solve?**
 
 {problem}
