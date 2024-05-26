@@ -11,3 +11,4 @@ assignees: ''
 - [ ] Directions, hidden once dismissed
 - [ ] Underlying libraries, with links
 - [ ] Save work + settings to local storage
+- [ ] Domain redirects (e.g. `transliterate.digitallinguistics.io` > `tools.digitallinguistics.io/transliterate`
