@@ -27,3 +27,4 @@ assignees: ''
   - [ ] copy-paste
   - [ ] file upload/download
   - [ ] cloud services
+- [ ] Update issue templates to include the tool as an option.
