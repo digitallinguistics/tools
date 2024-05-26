@@ -21,4 +21,7 @@ assignees: ''
 - [ ] Underlying libraries, with links
 - [ ] Save work + settings to local storage
 - [ ] Domain redirects (e.g. `transliterate.digitallinguistics.io` > `tools.digitallinguistics.io/transliterate`
-- [ ] Data Import/Export (via copy-paste and file upload/download)
+- [ ] Data Import/Export
+  - [ ] copy-paste
+  - [ ] file upload/download
+  - [ ] cloud services
