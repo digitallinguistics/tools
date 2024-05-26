@@ -1,0 +1,13 @@
+authors:
+  - family-names: Hieber
+    given-names:  Daniel W.
+    orcid: 'https://orcid.org/0000-0002-1411-3773'
+    website: https://danielhieber.info
+cff-version: 1.2.0
+license: MIT
+message: If you use the DLx Tools, please cite it using these metadata.
+repository-code: https://github.com/digitallinguistics/tools
+title: Tools for Linguistic Productivity (TooLiP)
+type: software
+url: https://tools.digitallinguistics.io
+version: 0.1.0
