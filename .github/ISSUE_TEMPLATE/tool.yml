@@ -21,10 +21,6 @@ body:
   - type: markdown
     attributes:
       value: |
-          \---
-
-          (This section is for developers.)
-
           \# To Do
 
         - [ ] Purpose/Overview
