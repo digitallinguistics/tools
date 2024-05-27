@@ -43,7 +43,7 @@ TooLiP is an online suite of tools that helps language researchers work with the
 
 5. View your development version of the site at <http://localhost:8080>.
 
-8. End-to-end tests are run using [Cypress]. You can run them programmatically by running `npm test` on the command line in the project root, or you can first start the server, and then (in a new command terminal) open the Cypress interface to run them manually using `npm run open-cypress`.
+6. End-to-end tests are run using [Cypress]. You can run them programmatically by running `npm test` on the command line in the project root, or you can first start the server, and then (in a new command terminal) open the Cypress interface to run them manually using `npm run open-cypress`.
 
 ## Project Structure
 
@@ -69,6 +69,19 @@ TooLiP is an online suite of tools that helps language researchers work with the
 - `{tool-name}.test.js`: The E2E tests to run for this tool.
 - `css/`: Use this subfolder for tool-specific CSS dependencies.
 - `js/`: Use this subfolder for tool-specific JS dependencies.
+
+## Tools To-Dos
+
+- [ ] Purpose/Overview
+- [ ] Directions, hidden once dismissed
+- [ ] Underlying libraries, with links
+- [ ] Save work + settings to local storage
+- [ ] Domain redirects (e.g. `transliterate.digitallinguistics.io` > `tools.digitallinguistics.io/transliterate`)
+- [ ] Data Import/Export
+  - [ ] copy-paste
+  - [ ] file upload/download
+  - [ ] cloud services
+- [ ] Update issue templates to include the tool as an option."
 
 ### HTML
 

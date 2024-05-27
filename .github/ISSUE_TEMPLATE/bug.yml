@@ -1,0 +1,75 @@
+name:        Bug
+description: Report a problem
+title:       "[BUG]"
+labels:      "\U0001F41E bug"
+assignees:   []
+body:
+
+  - type: dropdown
+    attributes:
+      description: Which tool does this problem relate to?
+      label:       Tool
+      options:
+        - site-wide
+        - multiple
+      validations:
+        required: true
+
+  - type: textarea
+    attributes:
+      label:       Expected Behavior
+      placeholder: A clear and concise description of what you expected to happen.
+      validations:
+        required: true
+
+  - type: textarea
+    attributes:
+      label:       Steps To Reproduce
+      description: Describe the steps you took to reproduce the problem.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+      validations:
+        required: true
+
+  - type: textarea
+    attributes:
+      label:       Actual Behavior
+      placeholder: A clear and concise description of what actually happened when you took the above steps.
+      validations:
+        required: true
+
+  - type: input
+    attributes:
+      label:       Mobile Device
+      description: If you encountered the problem on a mobile device, what device are you using?
+      placeholder: e.g. iPhone 11, Samsung Galaxy S23
+
+  - type: input
+    attributes:
+      label:       Operating System
+      description: What operating system were you using?
+      placeholder: e.g. iOS, Windows 11
+      validations:
+        required: true
+
+  - type: input
+    attributes:
+      label:       Browser
+      description: What browser were you using?
+      placeholder: e.g. Chrome, Safari
+      validations:
+        required: true
+
+  - type: input
+    attributes:
+      label:       Browser Version
+      description: What version of your browser were you using? (This can usually be found under an About option in a menu.)
+      placeholder: e.g. 22
+
+  - type: textarea
+    attributes:
+      label:       Additional Context | Screenshots
+      description: Provide any screenshots or additional context about the problem here.

@@ -1,0 +1,41 @@
+name:        Feature
+description: Request a feature or enhancement
+title:       "[FEATURE]"
+labels:      "\U0001F195 enhancement"
+assignees:   []
+body:
+
+  - type: dropdown
+    attributes:
+      description: Which tool does this feature relate to?
+      label:       Tool
+      options:
+        - site-wide
+        - multiple
+      validations:
+        required: true
+
+  - type: textarea
+    attributes:
+      description: Is your feature request related to a problem? Please describe.
+      label:       Problem
+      placeholder: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+
+  - type: textarea
+    attributes:
+      description: Describe the solution you'd like.
+      label:       Solution
+      placeholder: A clear and concise description of what you want to happen.
+      validations:
+        required: true
+
+  - type: textarea
+    attributes:
+      description: Describe the alternatives or workarounds you've considered.
+      label:       "Alternatives | Workarounds"
+      placeholder: A clear and concise description of any alternative solutions or features you've considered.
+
+  - type: textarea
+    attributes:
+      label:       Additional Context
+      placeholder: Add any other context or screenshots about the feature request here.

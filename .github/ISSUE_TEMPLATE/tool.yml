@@ -17,18 +17,3 @@ body:
       value: |
         - [ ] feature
         - [ ] feature
-
-  - type: markdown
-    attributes:
-      value: |
-        <hr>
-        - [ ] Purpose/Overview
-        - [ ] Directions, hidden once dismissed
-        - [ ] Underlying libraries, with links
-        - [ ] Save work + settings to local storage
-        - [ ] Domain redirects (e.g. `transliterate.digitallinguistics.io` > `tools.digitallinguistics.io/transliterate`
-        - [ ] Data Import/Export
-          - [ ] copy-paste
-          - [ ] file upload/download
-          - [ ] cloud services
-        - [ ] Update issue templates to include the tool as an option."
