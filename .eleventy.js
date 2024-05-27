@@ -3,6 +3,7 @@ import emptyDistDir from './build/emptyDistDir.js'
 export default function configure(config) {
 
   config.on(`eleventy.before`, emptyDistDir)
+  config.addPassthroughCopy(`src/CNAME`)
 
   return {
     dir: {
