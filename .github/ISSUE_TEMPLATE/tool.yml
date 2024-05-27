@@ -21,8 +21,6 @@ body:
   - type: markdown
     attributes:
       value: |
-          "# To Do
-
         - [ ] Purpose/Overview
         - [ ] Directions, hidden once dismissed
         - [ ] Underlying libraries, with links
