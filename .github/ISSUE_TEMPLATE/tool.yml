@@ -1,8 +1,8 @@
-name:      Tool
-about:     Issue for managing an individual tool
-title:     "[TOOL]"
-labels:    ["\U0001F6E0️ tool"]
-assignees: ''
+name:        Tool
+description: Issue for managing an individual tool
+title:       "[TOOL]"
+labels:      ["\U0001F6E0️ tool"]
+assignees:   []
 body:
 
   - type: textarea
@@ -21,6 +21,7 @@ body:
   - type: markdown
     attributes:
       value: |
+        <hr>
         - [ ] Purpose/Overview
         - [ ] Directions, hidden once dismissed
         - [ ] Underlying libraries, with links
