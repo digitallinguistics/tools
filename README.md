@@ -12,20 +12,19 @@ These tools are a part of the broader Digital Linguistics (DLx) project, which a
 
 ![GitHub discussions custom search](https://img.shields.io/github/discussions-search?query=discussions_q%3Dis%253Aopen%2Blabel%253A%22%F0%9F%9B%A0%25EF%25B8%258F%2BTools%22&label=discussions)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/digitallinguistics/tools)
-
 ![GitHub License](https://img.shields.io/github/license/digitallinguistics/tools)
 
-## Contributing
+- Have a question? [Check out the discussions.][discussions]
+- Want to request a new tool? [Open an issue here.][tool]
+- Want to request a feature or enhancement to an existing tool? [Open an issue here.][feature].
+- Need to report a problem? [Open an issue here.][bug].
 
-- If you'd like to request a new tool, [open an issue here][tool]
-- If you'd like to request a feature or enhancement to an existing tool, [open an issue here][feature].
-- If you'd like to report a problem, [open an issue here][bug].
-
-If you'd like to contribute to coding the project, check out the [contributor documentation][contributing].
+If you'd like to contribute to the project as a developer, check out the [contributor documentation][contributing].
 
 <!-- LINKS -->
 [bug]:          https://github.com/digitallinguistics/tools/issues/new?assignees=&labels=%F0%9F%90%9E+bug&projects=&template=bug.md&title=%5BBUG%5D
 [contributing]: https://github.com/digitallinguistics/tools/blob/main/.github/CONTRIBUTING.md
+[discussions]:  https://github.com/orgs/digitallinguistics/discussions?discussions_q=is%3Aopen+label%3A%22%F0%9F%9B%A0%EF%B8%8F+Tools%22
 [feature]:      https://github.com/digitallinguistics/tools/issues/new?assignees=&labels=%F0%9F%86%95+enhancement&projects=&template=feature.md&title=%5BFEATURE%5D
 [site]:         https://tools.digitallinguistics.io
 [tool]:         https://github.com/digitallinguistics/tools/issues/new?assignees=&labels=%F0%9F%9B%A0%EF%B8%8F+tool&projects=&template=tool.md&title=%5BTOOL%5D
