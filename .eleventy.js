@@ -1,4 +1,9 @@
-export default function configure() {
+import emptyDistDir from './build/emptyDistDir.js'
+
+export default function configure(config) {
+
+  config.on(`eleventy.before`, emptyDistDir)
+
   return {
     dir: {
       includes: `components`,
@@ -8,4 +13,5 @@ export default function configure() {
     },
     templateFormats: [`html`],
   }
+
 }

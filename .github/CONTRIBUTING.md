@@ -35,21 +35,13 @@ TooLiP is an online suite of tools that helps language researchers work with the
     > npm install
     ```
 
-4. Start a local server.
+4. Build the app and start a local server. This will start 11ty, and rebuild the app automatically when your code changes.
 
     ```cmd
     > npm start
     ```
 
 5. View your development version of the site at <http://localhost:8080>.
-
-6. Make your changes, then rebuild the app.
-
-    ```cmd
-    > npm run build
-    ```
-
-7. You can also use [nodemon] to automatically rebuild and restart the server when changes are made. A nodemon configuration file is included in the repo. To use it, simply run `nodemon` from the command line in the project root.
 
 8. End-to-end tests are run using [Cypress]. You can run them programmatically by running `npm test` on the command line in the project root, or you can first start the server, and then (in a new command terminal) open the Cypress interface to run them manually using `npm run open-cypress`.
 
@@ -141,7 +133,6 @@ Increment version numbers based on the following events.
 [gh-desktop]:       https://desktop.github.com/
 [Lotus]:            https://github.comdigitallinguistics/app
 [Node]:             https://nodejs.org/en
-[nodemon]:          https://nodemon.io/
 [Oxalis]:           https://github.comdigitallinguistics/data-explorer
 [styles]:           https://github.com/digitallinguistics/styles
 [Stylelint]:        https://stylelint.io/
