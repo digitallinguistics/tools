@@ -23,8 +23,12 @@
     "url": "https://github.com/digitallinguistics/tools.git"
   },
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
   "devDependencies": {
+    "@11ty/eleventy": "^3.0.0-alpha.10",
     "@digitallinguistics/eslint-config": "^0.5.2",
     "@eslint/js": "^9.3.0",
     "@stylistic/eslint-plugin-js": "^2.1.0",

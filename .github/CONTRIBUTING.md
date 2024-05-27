@@ -41,15 +41,43 @@ TooLiP is an online suite of tools that helps language researchers work with the
     > npm start
     ```
 
-5. Make your changes, then rebuild the app.
+5. View your development version of the site at <http://localhost:8080>.
+
+6. Make your changes, then rebuild the app.
 
     ```cmd
     > npm run build
     ```
 
-6. You can also use [nodemon] to automatically rebuild and restart the server when changes are made. A nodemon configuration file is included in the repo. To use it, simply run `nodemon` from the command line in the project root.
+7. You can also use [nodemon] to automatically rebuild and restart the server when changes are made. A nodemon configuration file is included in the repo. To use it, simply run `nodemon` from the command line in the project root.
 
-7. End-to-end tests are run using [Cypress]. You can run them programmatically by running `npm test` on the command line in the project root, or you can first start the server, and then (in a new command terminal) open the Cypress interface to run them manually using `npm run open-cypress`.
+8. End-to-end tests are run using [Cypress]. You can run them programmatically by running `npm test` on the command line in the project root, or you can first start the server, and then (in a new command terminal) open the Cypress interface to run them manually using `npm run open-cypress`.
+
+## Project Structure
+
+- `.github`: GitHub configuration files
+- `build`: build scripts
+- `dist/`: the compiled website (not checked into git)
+- `src`: the source code for the site (this is the folder processed by 11ty)
+- `src/assets`: static assets such as fonts, images, etc.
+- `src/classes`: global CSS classes used across the site
+- `src/components`: global components (combination of an HTML partial + accompanying CSS) used across the site
+- `src/layouts/main`: the main layout which serves as the app shell
+- `src/layouts/main/components`: components that are only used in the app shell
+- `src/layouts/main/styles`: global styles that are loaded as part of the app shell (CSS reset, typography, etc.)
+- `src/tools/{tool}`: source code for individual tools
+- `utilities`: JavaScript utilities
+- `eslint.config.js`: contains all the settings for building the site
+
+## Tools Structure
+
+- `{tool-name}.html`: The HTML for the tool.
+  - Each tool's HTML should be wrapped in `<main class={tool-name} id=main>`.
+- `{tool-name}.css`: This will be bundled and inlined automatically during build. Import all CSS dependencies for the tool into this file.
+- `{tool-name}.js`: This will be bundled and inlined automatically during build. Import all JS dependencies for the tool into this file.
+- `{tool-name}.test.js`: The E2E tests to run for this tool.
+- `css/`: Use this subfolder for tool-specific CSS dependencies.
+- `js/`: Use this subfolder for tool-specific JS dependencies.
 
 ## Resources
 
