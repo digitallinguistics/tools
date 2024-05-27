@@ -21,7 +21,7 @@ body:
   - type: markdown
     attributes:
       value: |
-          \# To Do
+          "# To Do
 
         - [ ] Purpose/Overview
         - [ ] Directions, hidden once dismissed
@@ -32,4 +32,4 @@ body:
           - [ ] copy-paste
           - [ ] file upload/download
           - [ ] cloud services
-        - [ ] Update issue templates to include the tool as an option.
+        - [ ] Update issue templates to include the tool as an option."
