@@ -63,13 +63,23 @@ TooLiP is an online suite of tools that helps language researchers work with the
 
 ## Tools Structure
 
-- `{tool-name}.html`: The HTML for the tool.
-  - Each tool's HTML should be wrapped in `<main class={tool-name} id=main>`.
+- `{tool-name}.html`: The HTML for the tool. (More below.)
 - `{tool-name}.css`: This will be bundled and inlined automatically during build. Import all CSS dependencies for the tool into this file.
 - `{tool-name}.js`: This will be bundled and inlined automatically during build. Import all JS dependencies for the tool into this file.
 - `{tool-name}.test.js`: The E2E tests to run for this tool.
 - `css/`: Use this subfolder for tool-specific CSS dependencies.
 - `js/`: Use this subfolder for tool-specific JS dependencies.
+
+### HTML
+
+- Copy the Template page in `src/tools/template/template.html` when starting a new tool.
+- Each tool's HTML should be wrapped in `<main class={tool-name} id=main>`.
+- Each tool page needs to start with a YAML header with the following attributes:
+
+| Property    | Format          | Description                                                         |
+| ----------- | --------------- | ------------------------------------------------------------------- |
+| `permalink` | `/{tool-name}/` | The path where the tool will live. Must include the trailing slash. |
+| `title`     | `{Tool Name}`   | This will appear in the browswer tab as "TooLiP \| {Tool Name}"     |
 
 ## Resources
 
