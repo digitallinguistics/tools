@@ -12,8 +12,8 @@ body:
       options:
         - site-wide
         - multiple
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     attributes:
@@ -26,8 +26,8 @@ body:
       description: Describe the solution you'd like.
       label:       Solution
       placeholder: A clear and concise description of what you want to happen.
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     attributes:

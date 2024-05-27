@@ -12,15 +12,15 @@ body:
       options:
         - site-wide
         - multiple
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     attributes:
       label:       Expected Behavior
       placeholder: A clear and concise description of what you expected to happen.
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     attributes:
@@ -31,15 +31,15 @@ body:
         2. Click on '....'
         3. Scroll down to '....'
         4. See error
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     attributes:
       label:       Actual Behavior
       placeholder: A clear and concise description of what actually happened when you took the above steps.
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: input
     attributes:
@@ -52,16 +52,16 @@ body:
       label:       Operating System
       description: What operating system were you using?
       placeholder: e.g. iOS, Windows 11
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: input
     attributes:
       label:       Browser
       description: What browser were you using?
       placeholder: e.g. Chrome, Safari
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: input
     attributes:
