@@ -25,6 +25,7 @@
   "type": "module",
   "scripts": {
     "build": "eleventy",
+    "postbuild": "node build/updateDocs.js",
     "start": "eleventy --serve"
   },
   "devDependencies": {
@@ -33,6 +34,7 @@
     "@eslint/js": "^9.3.0",
     "@stylistic/eslint-plugin-js": "^2.1.0",
     "eslint": "^9.3.0",
-    "fs-extra": "^11.2.0"
+    "fs-extra": "^11.2.0",
+    "yaml": "^2.4.2"
   }
 }

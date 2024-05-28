@@ -1,7 +1,7 @@
 authors:
   - family-names: Hieber
-    given-names:  Daniel W.
-    orcid: 'https://orcid.org/0000-0002-1411-3773'
+    given-names: Daniel W.
+    orcid: https://orcid.org/0000-0002-1411-3773
     website: https://danielhieber.info
 cff-version: 1.2.0
 license: MIT
