@@ -29,12 +29,12 @@
     "start": "eleventy --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0-alpha.10",
+    "@11ty/eleventy": "^3.0.0",
     "@digitallinguistics/eslint-config": "^0.5.2",
     "@eslint/js": "^9.3.0",
     "@stylistic/eslint-plugin-js": "^2.1.0",
     "eslint": "^9.3.0",
     "fs-extra": "^11.2.0",
-    "yaml": "^2.4.2"
+    "yaml": "^2.5.1"
   }
 }
