@@ -1,7 +1,7 @@
 import emptyDistDir    from './build/emptyDistDir.js'
 import { loadEnvFile } from 'node:process'
 
-loadEnvFile()
+if (!process.env.GITHUB_ACTIONS) loadEnvFile()
 
 export default function configure(config) {
 
