@@ -41,7 +41,7 @@ TooLiP is an online suite of tools that helps language researchers work with the
     > npm start
     ```
 
-5. View your development version of the site at <http://localhost:8080>.
+5. View your development version of the site at <http://localhost:3000>.
 
 6. End-to-end tests are run using [Cypress]. You can run them programmatically by running `npm test` on the command line in the project root, or you can first start the server, and then (in a new command terminal) open the Cypress interface to run them manually using `npm run open-cypress`.
 
@@ -72,16 +72,19 @@ TooLiP is an online suite of tools that helps language researchers work with the
 
 ## Tools To-Dos
 
-- [ ] Purpose/Overview
-- [ ] Directions, hidden once dismissed
-- [ ] Underlying libraries, with links
-- [ ] Save work + settings to local storage
-- [ ] Domain redirects (e.g. `transliterate.digitallinguistics.io` > `tools.digitallinguistics.io/transliterate`)
-- [ ] Data Import/Export
+A checklist to work through for each tool.
+
+- [ ] Add a purpose/overview to the Home page.
+- [ ] If helpful, add a `README.md` to the folder for that tool.
+- [ ] Add dismissable/hidable directions / help text to the page.
+- [ ] Add a note about which libraries are being used in the tool, with links, at the bottom of the page.
+- [ ] Allow the user to save their work + settings to local storage.
+- [ ] Set up domain redirects: `transliterate.digitallinguistics.io` > `tools.digitallinguistics.io/transliterate`
+- [ ] Allow data portability (import/export).
   - [ ] copy-paste
   - [ ] file upload/download
   - [ ] cloud services
-- [ ] Update issue templates to include the tool as an option."
+- [ ] Update issue templates to include the tool as an option.
 
 ### HTML
 
@@ -96,7 +99,7 @@ TooLiP is an online suite of tools that helps language researchers work with the
 
 ## Resources
 
-- **[Feather Icons][Feather]:** DLx projects use Feather Icons for UI by default.
+- **[Feather Icons][Feather]:** DLx projects use Feather Icons for UI by default, or similar styles when Feather does not have a specific icon available.
 
 ## Dependencies
 
@@ -117,13 +120,13 @@ TooLiP is an online suite of tools that helps language researchers work with the
 - **[stylelint-config]** An opinionated CSS code style set shared across DLx projects.
 - **[styles]:** CSS styles for presenting linguistic data and documents on the web.
 
-Individual tools also use various DLx dependencies. You explore all the DLx projects [here][DLx].
+Individual tools also use various DLx dependencies. You can explore all the DLx projects [here][DLx].
 
 ## Versioning & Releases
 
-Only update the version number when you're ready to make a release.
+While in initial development (`v0.1.0`), the site deploys to GitHub Pages every time a change is pushed to `main`.
 
-Development branches can be forked directly from `main`. For now there are no version branches, though there may be in the future.
+Later, only releases will be deployed, and this will be accompanied by a change in version number.
 
 Increment version numbers based on the following events.
 

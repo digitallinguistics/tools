@@ -1,9 +1,13 @@
-import emptyDistDir from './build/emptyDistDir.js'
+import emptyDistDir    from './build/emptyDistDir.js'
+import { loadEnvFile } from 'node:process'
+
+loadEnvFile()
 
 export default function configure(config) {
 
-  config.on(`eleventy.before`, emptyDistDir)
   config.addPassthroughCopy(`src/CNAME`)
+  config.on(`eleventy.before`, emptyDistDir)
+  config.setServerOptions({ port: process.env.PORT })
 
   return {
     dir: {
